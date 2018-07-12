@@ -1,0 +1,26 @@
+<table class="nbp-books-widget__table">
+  <thead>
+    <tr>
+      <th class="nbp-books-widget__cell nbp-books-widget__cell--header">Title</th>
+      <th class="nbp-books-widget__cell nbp-books-widget__cell--header">Desc</th>
+      <th class="nbp-books-widget__cell nbp-books-widget__cell--header nbp-books-widget__cell--price">Price</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr class="nbp-books-widget__row"
+      *ngFor="let book of books; trackBy:getBookId">
+      <th class="nbp-books-widget__cell">
+        {{ book.title }}
+      </th>
+
+      <td class="nbp-books-widget__cell">
+        {{ book.desc }}
+      </td>
+
+      <td class="nbp-books-widget__cell nbp-books-widget__cell--price">
+        {{ book.price }} &euro;
+      </td>
+    </tr>
+  </tbody>
+</table>

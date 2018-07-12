@@ -1,0 +1,28 @@
+.nbp-books-widget__table {
+  border-collapse: collapse;
+  border-bottom: 1px solid #ddd;
+}
+
+.nbp-books-widget__row {
+  border-top: 1px solid #ddd;
+
+  &:nth-child(2n) {
+    background-color: #f5f5f5;
+  }
+}
+
+.nbp-books-widget__cell {
+  padding: 0.75rem 1.5rem;
+}
+
+.nbp-books-widget__cell--header {
+  border-top: 1px solid #ddd;
+  background-color: #eee;
+  text-align: left;
+  font-weight: 600;
+}
+
+.nbp-books-widget__cell--price {
+  border-left: 1px dashed #ddd;
+  text-align: right;
+}
